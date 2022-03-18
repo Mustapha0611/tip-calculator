@@ -99,6 +99,9 @@ var reset = document.getElementById("reset")
 
     reset.addEventListener('click',()=> {
         tip_amount.innerHTML = "$0.00";
-        total_tip.innerHTML = "$0.00"
+        total_tip.innerHTML = "$0.00";
+        custom.value = '';
+        no_of_people.value = '';
+        Total_amount.value = '';
         reset.style.backgroundColor ="rgb(30, 133,127)"
     })
