@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Mono">
+
+</head>
+<body>
+  <section class="container">
+    <div>
+      <span>SPLI <br> TTER</span>
+    </div>
+    <div class="main">
+      <div class="tip-format">
+        <p>Bill</p>
+        <input type="number" value="" id="total-amount" placeholder="$                0">
+        <p class="select-tip">Select Tip%</p>
+        <div class="tip-percent">
+          <div class="box five-percent" id="five">5%</div>
+          <div class="box ten-percent" id="ten">10%</div>
+          <div class="box fift-percent" id="fifteen">15%</div>
+          <div class="box tf-percent" id="twenty-five">25%</div>
+          <div class="box fif-percent" id="fifty">50%</div>
+          <div class=" custom"><input type="number" id="custom" placeholder="Custom"></div>
+        </div>
+        <p class="no-of-people">Number of People <span id="red">Can't be Zero</span></p>
+        <input type="number" id="no-of-people" value="" placeholder="#                0">
+      </div>
+      <div class="tip-output">
+        
+          <div class="tip-otp">
+            <p class="tip-amount">Tip Amount <br><span>/person</span></p>
+            <p class="val-per-person" id="tip_amount">$0.00</p>
+       
+              <p class="tip-amount">Total <br><span>/person</span></p>
+              <p class="val-per-person" id="total-tip">$0.00</p>
+            </div>
+            <p id="reset">
+              RESET
+            </p>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="index.js">
+</script>
+</html>
